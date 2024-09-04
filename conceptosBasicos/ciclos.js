@@ -32,6 +32,23 @@ for(let i = 0; i < frutas.length; i++){
     console.log(frutas[i]);
 }
 
-//For-in
+//For-in - Se usa para objetos
+const listaDeCompras = {
+    yuca: 5,
+    arracacha: 23,
+    papa: 34,
+    arroz:43
+}
+for (lista1 in listaDeCompras){
+    console.log(lista1);
+}
+//concatena el string con el valor de la propiedad
+for (lista1 in listaDeCompras){
+    console.log(`${lista1}: ${listaDeCompras[lista1]}`); //imprime el nombre de la propiedad y el valor de la propiedad
+}
 
-//For-of
+//For-of - Se usa para arreglos
+listaDeCompras1 = ['papa', 'yuca', 'arracacha', 'manzana'];
+for (lista2 of listaDeCompras1){
+    console.log(lista2);
+}
